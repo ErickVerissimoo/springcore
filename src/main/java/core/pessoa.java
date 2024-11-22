@@ -2,18 +2,13 @@ package core;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 @Component
 public class pessoa {
 private String nome;
 private int idade;
-@Autowired carro meucar;
-public carro getMeucar() {
-	return meucar;
-}
-public void setMeucar(carro meucar) {
-	this.meucar = meucar;
-}
+
+
+
 public String getNome() {
 	return nome;
 }
