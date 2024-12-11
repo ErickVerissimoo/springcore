@@ -20,6 +20,9 @@ public class contextConfig {
     @Bean
     @Scope(value = "singleton")
     public moto getMoto(){
-        return new moto();
+        moto mot = new moto();
+        mot.setCilindradas(2);
+        mot.setModelo("Honda");
+        return mot;
     }
 }

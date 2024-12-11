@@ -2,6 +2,13 @@
 /home/gil/NetBeansProjects/springcore/src/main/java/com/corespring/springcore/annotationsapplicationcontext/app.java
 /home/gil/NetBeansProjects/springcore/src/main/java/com/corespring/springcore/annotationsapplicationcontext/contextConfig.java
 /home/gil/NetBeansProjects/springcore/src/main/java/com/corespring/springcore/annotationsapplicationcontext/pessoa.java
+/home/gil/NetBeansProjects/springcore/src/main/java/com/corespring/springcore/annotationsapplicationcontext/pessoaDTO.java
+/home/gil/NetBeansProjects/springcore/src/main/java/com/corespring/springcore/aop/Config.java
+/home/gil/NetBeansProjects/springcore/src/main/java/com/corespring/springcore/aop/appMain.java
+/home/gil/NetBeansProjects/springcore/src/main/java/com/corespring/springcore/aop/carro.java
+/home/gil/NetBeansProjects/springcore/src/main/java/com/corespring/springcore/aop/fistAspect.java
 /home/gil/NetBeansProjects/springcore/src/main/java/com/corespring/springcore/applicationcontextxml/applicationContextApp.java
 /home/gil/NetBeansProjects/springcore/src/main/java/com/corespring/springcore/applicationcontextxml/carro.java
 /home/gil/NetBeansProjects/springcore/src/main/java/com/corespring/springcore/applicationcontextxml/moto.java
+/home/gil/NetBeansProjects/springcore/src/main/java/com/corespring/springcore/beanfacyoryapp/app.java
+/home/gil/NetBeansProjects/springcore/src/main/java/com/corespring/springcore/beanfacyoryapp/pessoa.java

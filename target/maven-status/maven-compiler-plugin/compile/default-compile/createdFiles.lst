@@ -1,7 +1,14 @@
 com/corespring/springcore/applicationcontextxml/applicationContextApp.class
+com/corespring/springcore/aop/fistAspect.class
 com/corespring/springcore/annotationsapplicationcontext/Carro.class
+com/corespring/springcore/aop/appMain.class
+com/corespring/springcore/beanfacyoryapp/pessoa.class
+com/corespring/springcore/beanfacyoryapp/app.class
 com/corespring/springcore/annotationsapplicationcontext/app.class
 com/corespring/springcore/applicationcontextxml/moto.class
-com/corespring/springcore/annotationsapplicationcontext/pessoa.class
 com/corespring/springcore/annotationsapplicationcontext/contextConfig.class
 com/corespring/springcore/applicationcontextxml/carro.class
+com/corespring/springcore/aop/carro.class
+com/corespring/springcore/aop/Config.class
+com/corespring/springcore/annotationsapplicationcontext/pessoa.class
+com/corespring/springcore/annotationsapplicationcontext/pessoaDTO.class

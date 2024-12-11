@@ -14,13 +14,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class applicationContextApp {
     
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        
-    carro car = (carro)context.getBean("car");
+        try (ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml")){
+              carro car = (carro)context.getBean("car");
         System.out.println(car.hashCode());
         carro caro = context.getBean(carro.class);
         System.out.println(caro.hashCode());
         
         System.out.println(context);
+       
+  
     }
-}
+}}

@@ -4,7 +4,6 @@
  */
 package com.corespring.springcore.annotationsapplicationcontext;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -13,12 +12,17 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class app {
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext(contextConfig.class);
-        pessoa p = context.getBean(pessoa.class);
-        System.out.println(p.getNome());
-        p.setCar(context.getBean(Carro.class));
-        p.getCar().setAnofabricacao(2020);
-        System.out.println(p.getCar().getAnofabricacao());
-        
+        Runnable runar =() -> {
+            System.out.println(Thread.currentThread().getName());
+         try(AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(contextConfig.class)){
+                            Carro car = context.getBean(Carro.class);
+                          System.out.println("Meio da aplicação");
+        }}; 
+        Thread th = new Thread(runar);
+        th.start();
+        Thread thread = new Thread(runar);
+        thread.start();
+   
     }
+    
 }

@@ -11,15 +11,20 @@ import org.springframework.stereotype.Component;
  * @author Erick
  */
 @Component
-public class pessoa {
-    private String nome = "derick";
-    private int idade = 18;
-    private Carro car;
-    public pessoa(Carro car){
-        this.car=car;
+public class pessoaDTO {
+    private String nome;
+    private int idade;
+
+    public String getNome() {
+        return nome;
     }
+
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
     }
 
     public void setIdade(int idade) {
@@ -33,11 +38,5 @@ public class pessoa {
     public void setCar(Carro car) {
         this.car = car;
     }
-    public String getNome() {
-        return nome;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
+    private Carro car;
 }

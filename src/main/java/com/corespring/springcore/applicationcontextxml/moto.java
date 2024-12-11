@@ -10,5 +10,21 @@ package com.corespring.springcore.applicationcontextxml;
  */
 public class moto {
     private String modelo;
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public int getCilindradas() {
+        return cilindradas;
+    }
+
+    public void setCilindradas(int cilindradas) {
+        this.cilindradas = cilindradas;
+    }
     private int cilindradas;
 }

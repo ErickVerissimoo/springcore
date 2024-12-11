@@ -4,6 +4,8 @@
  */
 package com.corespring.springcore.annotationsapplicationcontext;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.stereotype.Component;
 
 /**
@@ -16,7 +18,14 @@ private String modelo;
     public String getModelo() {
         return modelo;
     }
-
+    @PostConstruct
+    public void init(){
+        System.out.println("Bean criada");
+    }
+    @PreDestroy
+    public void destroy(){
+        System.out.println("Bean destruida");
+    }
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
@@ -29,5 +38,5 @@ private String modelo;
         this.anofabricacao = anofabricacao;
     }
 private int anofabricacao;
-
 }
+
