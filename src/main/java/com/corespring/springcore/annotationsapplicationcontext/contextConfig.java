@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Scope;
  * @author Erick
  */
 @Configuration
-@ComponentScan(basePackages = "com.corespring.springcore")
+@ComponentScan(basePackages = "com.corespring.springcore.annotationsapplicationcontext")
 public class contextConfig {
     @Bean
     @Scope(value = "singleton")

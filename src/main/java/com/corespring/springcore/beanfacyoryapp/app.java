@@ -5,11 +5,11 @@
 package com.corespring.springcore.beanfacyoryapp;
 
 import org.springframework.beans.factory.BeanFactory;
-import org.springframework.context.ApplicationContext;
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
-
+import org.springframework.core.SpringVersion;;
 /**
  *
  * @author Erick
@@ -21,6 +21,8 @@ public class app {
         
         pessoa p = factory.getBean(pessoa.class);
         System.out.println(p.toString());
-            }
+    System.out.println(SpringVersion.getVersion());        
+    }
+            
  
 }

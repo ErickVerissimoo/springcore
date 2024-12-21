@@ -12,16 +12,12 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class app {
     public static void main(String[] args) {
-        Runnable runar =() -> {
-            System.out.println(Thread.currentThread().getName());
          try(AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(contextConfig.class)){
                             Carro car = context.getBean(Carro.class);
-                          System.out.println("Meio da aplicação");
-        }}; 
-        Thread th = new Thread(runar);
-        th.start();
-        Thread thread = new Thread(runar);
-        thread.start();
+                          car.setModelo("toyota");
+                            System.out.println(car.getModelo());
+        }
+       
    
     }
     
